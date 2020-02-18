@@ -17,7 +17,7 @@ import . "fmt"
 
 func main() {
 	var a, sum int
-	//Print("Enter number: ")
+	Print("Enter number: ")
 	Scan(&a)
 	for a > 0 {
 		sum += a % 10
