@@ -26,27 +26,19 @@ type Stuff struct {
 }
 
 func (s *Stuff) Shoot() bool {
-	if !s.On {
-		return false
-	}
-	if s.Ammo > 0 {
+	if s.On && s.Ammo > 0 {
 		s.Ammo = s.Ammo - 1
 		return true
-	} else {
-		return false
 	}
+	return false
 }
 
 func (s *Stuff) RideBike() bool {
-	if !s.On {
-		return false
-	}
-	if s.Power > 0 {
+	if s.On && s.Power > 0 {
 		s.Power = s.Power - 1
 		return true
-	} else {
-		return false
 	}
+	return false
 }
 
 func main() {
