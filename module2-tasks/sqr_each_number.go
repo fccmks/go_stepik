@@ -26,3 +26,17 @@ func main() {
 		fmt.Print(val * val)
 	}
 }
+
+// подсмотрел на форуме решений
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var n int
+// 	fmt.Scan(&n)
+// 	for n != 0 {
+// 		defer fmt.Print((n % 10) * (n % 10))
+// 		n /= 10
+// 	}
+// }
